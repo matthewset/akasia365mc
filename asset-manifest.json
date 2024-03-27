@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/akasia365mc/static/css/main.7bc49e81.css",
+    "main.js": "/akasia365mc/static/js/main.c1dcfcf2.js",
+    "static/js/453.dc2a820a.chunk.js": "/akasia365mc/static/js/453.dc2a820a.chunk.js",
+    "index.html": "/akasia365mc/index.html",
+    "main.7bc49e81.css.map": "/akasia365mc/static/css/main.7bc49e81.css.map",
+    "main.c1dcfcf2.js.map": "/akasia365mc/static/js/main.c1dcfcf2.js.map",
+    "453.dc2a820a.chunk.js.map": "/akasia365mc/static/js/453.dc2a820a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bc49e81.css",
+    "static/js/main.c1dcfcf2.js"
+  ]
+}
