@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to...</title>
+  <script type="text/javascript">
+    // Check if the URL hash contains a path
+    if (window.location.hash) {
+      // Use JavaScript to redirect to the hash path
+      var path = window.location.hash.substring(1); // Remove the '#' character
+      window.location.replace(path);
+    } else {
+      // Redirect to the home page if there's no hash
+      window.location.replace('/en/home');
+    }
+  </script>
+</head>
+<body>
+  If you are not redirected, <a href="/en/home">click here</a>.
+</body>
+</html>
