@@ -95,7 +95,7 @@ function EnHome() {
       <div className="text-center">
         <p className="text-3xl text-amber-500">Have any questions? Contact us or ask our AI consultant, Sunhee!</p>
       </div>
-      <div className="flex flex-col my-8 mx-auto p-6 bg-white border border-grey rounded-lg shadow max-w-md">
+      <div className="flex flex-col my-8 mx-auto p-6 bg-white border border-grey rounded-3xl shadow max-w-md">
         <div className="flex items-center mb-4">
           <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/2b/a7/98/2ba7982b-9743-5027-97ee-aad107ae8202/AppIcon-0-0-1x_U007epad-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="Profile" className="w-10 h-10 rounded-full mr-3" />
           <span className="font-bold text-amber-500">Sunhee</span>
@@ -154,7 +154,7 @@ function EnHome() {
             <iframe
               title="Mayapada Hospital South Jakarta"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060915.789803911!2d101.90783121250006!3d-6.298109199999977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1f00fe6edf7%3A0xb664883bee56870c!2sMayapada%20Hospital%20South%20Jakarta!5e0!3m2!1sen!2suk!4v1711556850073!5m2!1sen!2suk"
-              className="w-full h-full" // This makes the iframe responsive
+              className="w-full h-full rounded-3xl"
               style={{ border: 0, display: 'block', margin: 'auto' }}
               allowFullScreen={true}
               loading="lazy"
