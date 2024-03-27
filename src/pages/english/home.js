@@ -51,7 +51,7 @@ function EnHome() {
     setNewMessage('');
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/chat', {
+      const response = await axios.post('https://365mc-bots.vercel.app/chat', {
         message: newMessage,
       });
 
