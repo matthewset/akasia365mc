@@ -1,11 +1,14 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import EnHome from './pages/english/home.js';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/en/home" element={<EnHome/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
