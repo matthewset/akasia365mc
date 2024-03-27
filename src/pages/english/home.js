@@ -64,7 +64,7 @@ function EnHome() {
   };
 
   return (
-    <div>
+    <div className="max-w-full overflow-x-hidden">
       <NavigationBar />
       <div className="relative my-8">
         <div className="overflow-hidden">
@@ -129,18 +129,20 @@ function EnHome() {
         <div className="text-center my-4">
           <p className="text-3xl text-white">#LebihSimple #LebihPasti #LAMSaja</p>
         </div>
-        <div className="flex justify-center items-center space-x-10 my-8">
-          <div className="instagram-embed" dangerouslySetInnerHTML={{__html: `
+        {/* Wrapper div with Tailwind classes for horizontal scrolling */}
+        <div className="flex justify-center overflow-x-auto space-x-10 py-2">
+          <div className="instagram-embed min-w-max" dangerouslySetInnerHTML={{__html: `
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4ffvuQvCPQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
           `}} />
-          <div className="instagram-embed" dangerouslySetInnerHTML={{__html: `
+          <div className="instagram-embed min-w-max" dangerouslySetInnerHTML={{__html: `
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4cUy3bPBMO/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
           `}} />
-          <div className="instagram-embed" dangerouslySetInnerHTML={{__html: `
+          <div className="instagram-embed min-w-max" dangerouslySetInnerHTML={{__html: `
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4cy-RVPvqp/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
           `}} />
         </div>
       </div>
+      
       <div>
         <div className="text-center my-4">
           <p className="text-3xl text-amber-500"><b>Location</b></p>
@@ -148,13 +150,12 @@ function EnHome() {
           <p className="text-lg text-black">Mayapada Hospital Jakarta Selatan, Tower 2, 6th Floor</p>
         </div>
         <div className="flex justify-center items-center">
-          <div className="my-8">
+          <div className="my-8 w-full sm:w-3/4 h-[600px]">
             <iframe
               title="Mayapada Hospital South Jakarta"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060915.789803911!2d101.90783121250006!3d-6.298109199999977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1f00fe6edf7%3A0xb664883bee56870c!2sMayapada%20Hospital%20South%20Jakarta!5e0!3m2!1sen!2suk!4v1711556850073!5m2!1sen!2suk"
-              width="1000"
-              height="500"
-              style={{ border: 0, display: 'block', margin: 'auto' }} // Ensure it's block and centered
+              className="w-full h-full" // This makes the iframe responsive
+              style={{ border: 0, display: 'block', margin: 'auto' }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
